@@ -11,7 +11,7 @@ Maybe even try MongoDB
 4. 
 
 ## …git on the command line
-git init
-git remote add origin https://github.com/denohpakni/djangoMySQL.git
-git commit -m "first commit"
-git push origin master
+    git init
+    git remote add origin https://github.com/denohpakni/djangoMySQL.git
+    git commit -m "first commit"
+    git push origin master
