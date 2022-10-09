@@ -10,17 +10,8 @@ Maybe even try MongoDB
 3. https://learndjango.com/tutorials/django-static-files
 4. 
 
-
-echo "# djangoMySQL" >> README.md
+## …git on the command line
 git init
-git add README.md
+git remote add origin https://github.com/denohpakni/djangoMySQL.git
 git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/denohpakni/djangoMySQL.git
-git push -u origin main
-
-
-## …or push an existing repository from the command line
-git remote add origin https://github.com/denohpakni/djangoMySQL.git
-git branch -M main
-git push -u origin main
+git push origin master
