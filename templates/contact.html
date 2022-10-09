@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h3>{{ title }}.</h3> 
+
+<h4>{{ message }}</h4> 
+
+   {% if contact_list %}
+      {% for contact in contact_list %}
+      <address>      
+         <div class="table-responsive">
+            <table class="table text-center">
+            <thead>
+               <tr>
+                  <th style="width: 34%;"></th>
+                  <th style="width: 22%;">Town</th>
+                  <th style="width: 22%;">County</th>
+                  <th style="width: 22%;">Contact details</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <th scope="row" class="text-start">{{contact.name}}</th>
+                  <td> {{contact.town}} </td>
+                  <td> {{contact.county}} </td>
+                  <td> {{contact.phone_number}}, <a href="mailto:{{contact.email}}">{{contact.email}}</a>  </td>
+               </tr>         
+            </tbody>      
+            </table>
+         </div>
+   </address> 
+   {% endfor %}
+
+    {% else %}
+    <p>No contact are available.</p> 
+    
+    {% endif %}
+
+{% endblock %}
